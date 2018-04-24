@@ -1,0 +1,17 @@
+{
+  "name": "modern-web-development",
+  "version": "1.0.0",
+  "description": "examples for the weekend tutorials",
+  "main": "",
+  "scripts": {
+    "install-packages": "npm install && sudo npm install --save --global jshint",
+    "lint": "jshint ./Course1"
+  },
+  "author": "Cristi Minica",
+  "license": "WTFPL",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "request": "^2.85.0"
+  }
+}
