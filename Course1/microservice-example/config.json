@@ -1,0 +1,5 @@
+{
+  "bookservice": "http://localhost:3001/book",
+  "mailerservice": "http://localhost:3002/mail",
+  "adminservice": "http://localhost:3003/admin/count"
+}
