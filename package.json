@@ -5,10 +5,12 @@
   "main": "",
   "scripts": {
     "install-packages": "npm install && sudo npm install --save --global jshint",
-    "lint": "jshint ./Course1"
+    "lint": "jshint ./Course1",
+    "start": "node ./Course1/mvc-service-structure-example/main.js"
   },
   "author": "Cristi Minica",
   "license": "WTFPL",
+  "repository": "https://github.com/Caphyon/modern-web-development.git",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
