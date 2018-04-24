@@ -1,0 +1,9 @@
+{
+  "eqeqeq": true,
+  "esversion": 6,
+  "node": true,
+  "quotmark": "single",
+  "indent": 2,
+  "maxerr": 50,
+  "maxlen": 80
+}
