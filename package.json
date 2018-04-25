@@ -4,7 +4,7 @@
   "description": "examples for the weekend tutorials",
   "main": "",
   "scripts": {
-    "install-packages": "npm install && sudo npm install --save --global jshint",
+    "install-packages": "npm install && npm install --save --global jshint",
     "lint": "jshint ./Course1",
     "start": "node ./Course1/mvc-service-structure-example/main.js"
   },
