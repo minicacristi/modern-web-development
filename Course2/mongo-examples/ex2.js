@@ -15,7 +15,8 @@ mdbclient.connect(url, (err, conn) => {
       conn.close();
       return console.error(err);
     }
-    console.log(`Created a collection named ${config.db} in database ${config.collection}`);
+    console.log(`Created a collection named ${config.db}` + 
+      ` in database ${config.collection}`);
 
     // insert datapoints in collection
     collection.insertMany([
@@ -30,4 +31,4 @@ mdbclient.connect(url, (err, conn) => {
       conn.close();
     });
   });
-})
+});

@@ -28,5 +28,5 @@ mdbclient.connect(url, (err, conn) => {
       // if the connection is not closed the node process will hang
       conn.close();
     });
-  })
-})
+  });
+});

@@ -1,4 +1,4 @@
 module.exports = {
-  "db": "testdb",
-  "collection": "testCollection"
+  'db': 'testdb',
+  'collection': 'testCollection'
 };

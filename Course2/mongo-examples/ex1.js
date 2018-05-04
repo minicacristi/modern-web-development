@@ -6,7 +6,8 @@ const url = 'mongodb://localhost:27017/';
 const config = {
   db: 'testdb',
   collection: 'testCollection'
-}
+};
+
 // connect to the server
 mdbclient.connect(url, (err, conn) => {
   if (err)
@@ -17,9 +18,10 @@ mdbclient.connect(url, (err, conn) => {
     if (err) {
       console.error(err);
     } else {
-      console.log(`Created a collection named ${config.db} in database ${config.collection}`);
+      console.log(`Created a collection named ${config.db}` + 
+        ` in database ${config.collection}`);
     }
     // if the connection is not closed the node process will hang
     conn.close();
-  })
-})
+  });
+});
