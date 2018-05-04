@@ -5,7 +5,7 @@
   "main": "",
   "scripts": {
     "install-packages": "npm install && npm install --save --global jshint",
-    "lint": "jshint ./Course1",
+    "lint": "jshint --exclude ./node_modules .",
     "start": "node ./Course1/mvc-service-structure-example/main.js"
   },
   "author": "Cristi Minica",
@@ -15,6 +15,7 @@
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
     "mongodb": "^3.0.7",
+    "mongoose": "^5.0.17",
     "request": "^2.85.0"
   }
 }
