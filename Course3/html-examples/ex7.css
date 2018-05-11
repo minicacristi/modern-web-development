@@ -1,0 +1,12 @@
+@import '/html-examples/ex6.css';
+
+.call-to-action {
+  border: none;
+  background-color: green;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 12px;
+  padding: 10px 24px;
+  display: inline-block;
+  font-size: 16px;
+}

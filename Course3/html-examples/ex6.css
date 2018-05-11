@@ -1,0 +1,20 @@
+body {
+  background-color: powderblue;
+  font-family: 'Roboto';
+}
+
+h1 {
+  color: blue;
+}
+
+p {
+  color: orange;
+}
+
+#formatting {
+  background-color: red;
+}
+
+.border-element {
+  border: 1px solid grey;
+}

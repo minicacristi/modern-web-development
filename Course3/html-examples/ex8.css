@@ -1,0 +1,29 @@
+@import '/html-examples/ex7.css';
+
+.button {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 24px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button-round {
+  border-radius: 12px;
+}
+
+.button-danger {
+  background-color: red;
+  color: white;
+}
+
+.button-warning {
+  background-color: orange;
+  color: white;
+}
+
+.button-ok {
+  background-color: blue;
+  color: white;
+}
