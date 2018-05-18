@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Vue examples</title>
+</head>
+
+<body>
+  <article id='ex1'>
+    {{ model }}
+    <button-counter> 
+    </button-counter>
+    <button-counter>
+    </button-counter>
+    <button-counter>
+    </button-counter>
+  </article>
+</body>
+<script src='https://cdn.jsdelivr.net/npm/vue'></script>
+<script>
+  // Define a new component called button-counter
+  Vue.component('button-counter', {
+    data: function () {
+      return {
+        count: 0
+      }
+    },
+    template: '<button v-on:click="count++">You clicked me {{ count }} times.</button>'
+  })
+  var ex1 = new Vue({
+    el: '#ex1',
+    data: {
+      model: 'Vue works'
+    }
+  });
+</script>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Vue examples</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" 
+  integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+</head>
+
+<body>
+  <div id='ex3'>
+    <header>
+      <navigation> </navigation>
+    </header>
+    <main class="container">
+      <div class="row">
+        <card title="t1" author="a1" content="Some content1" date="21 Mai"> </card>
+        <card title="t2" author="a2" content="Some content1" date="21 Mai"> </card>
+        <card title="t3" author="a3" content="Some content1" date="21 Mai"> </card>
+      </div>
+    </main>
+    <copyright></copyright>
+  </div>
+</body>
+<script src='https://cdn.jsdelivr.net/npm/vue'></script>
+<script>
+  // Define a new component called button-counter
+  Vue.component('navigation', {
+    template: `
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="https://installeranalytics.com">
+        <img width="32" height="32" src="https://installeranalytics.com/common/images/Installer_Analytics_Logo_No_Text.svg"/>
+      </a>
+      <div class="nav justify-content-end">
+        <a class="nav-item nav-link" href="https://getbootstrap.com">
+          Bootstrap
+        </a>
+        <a class="nav-item nav-link" href="https://vuejs.org">
+          Vue
+        </a>
+      </div>
+    </nav>
+    `
+  });
+
+  Vue.component('card', {
+    props: ['title', 'author', 'content', 'date'],
+    template: `<article class="card"> 
+        <section class="card-header"> 
+          by {{ author }}
+        </section>
+        <section class="card-body text-center">
+          <h5 class="card-title"> {{ title }} </h5>
+          <p class="card-text"> {{ content }} </p>
+        </section>
+        <div class="card-footer text-muted">
+          {{ date }}
+        </div>
+      </article>`
+  });
+
+  Vue.component('copyright', {
+    template: '<footer class="text-center"> Caphyon 2018 </footer>'
+  });
+  
+  var ex3 = new Vue({
+    el: '#ex3'
+  });
+</script>
+
+</html>
