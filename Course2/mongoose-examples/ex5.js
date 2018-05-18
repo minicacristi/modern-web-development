@@ -23,7 +23,7 @@ bookSchema.pre('save', function (next) {
 // model methods
 bookSchema.methods.getTitle = function() {
   return this.name + ', by ' + this.author;
-}
+};
 
 // create book model
 const Book = mongoose.model('Book', bookSchema);
