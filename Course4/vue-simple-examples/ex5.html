@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Vue examples</title>
+</head>
+
+<body>
+  <article id='ex5'>
+    <section>
+      <h1>{{ model }}</h1>
+      <input v-model='model'> </input>
+    </section>
+  </article>
+</body>
+<script src='https://cdn.jsdelivr.net/npm/vue'></script>
+<!-- Axios library for http/s requests-->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+  var ex5 = new Vue({
+    el: '#ex5',
+    data: {
+      model: 'Vue works'
+    },
+    created: function () {
+      axios('https://api.chucknorris.io/jokes/random').then((resp) => {
+        this.model = resp.data.value;
+      });
+    }
+  });
+</script>
+
+</html>

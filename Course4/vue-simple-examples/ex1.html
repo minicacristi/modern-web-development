@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vue examples</title>
+  </head>
+  <body>
+    <article id='ex1'>
+      <section>
+        <h1>{{ model }}</h1>
+        <input v-model='model'> </input>
+      </section>
+      <section>
+        <h5>Full js Power: {{ model.toUpperCase() }}</h5>
+        {{ model ? 'yes' : 'no'}}
+      </section>
+    </article>
+  </body>
+  <script src='https://cdn.jsdelivr.net/npm/vue'></script>
+  <script>
+    var ex1 = new Vue({
+      el: '#ex1',
+      data: {
+        model: 'Vue works'
+      }
+    });
+  </script>
+</html>

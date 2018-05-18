@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vue examples</title>
+  </head>
+  <body>
+    <article id='ex2'>
+      <section v-if='show'>
+        <h1>{{ model }}</h1>
+        <input v-model='model'> </input>
+      </section>
+    </article>
+  </body>
+  <script src='https://cdn.jsdelivr.net/npm/vue'></script>
+  <script>
+    var ex2 = new Vue({
+      el: '#ex2',
+      data: {
+        model: 'Vue works',
+        show: true
+      }
+    });
+  </script>
+</html>

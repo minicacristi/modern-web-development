@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vue examples</title>
+  </head>
+  <body>
+    <article id='ex3'>
+      Cuprins Modern Web Development:
+      <ol>
+        <li v-for='curs in cursuri'> 
+          {{curs}} 
+        </li>
+      </ol>
+    </article>
+  </body>
+  <script src='https://cdn.jsdelivr.net/npm/vue'></script>
+  <script>
+    var ex3 = new Vue({
+      el: '#ex3',
+      data: {
+        cursuri: ['Node', 'Mongo', 'Html&CSS', 'Vue']
+      }
+    });
+  </script>
+</html>

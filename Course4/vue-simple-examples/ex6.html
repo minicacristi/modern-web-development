@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Vue examples</title>
+</head>
+
+<body>
+  <article id='ex6'>
+    <h1>{{ message }}</h1>
+    <h1>Computed big: {{ big }}</h1>
+    <h1>Computed small: {{ small }}</h1>
+    <input v-model='message'> </input>
+  </article>
+</body>
+<script src='https://cdn.jsdelivr.net/npm/vue'></script>
+<script>
+  var ex6 = new Vue({
+    el: '#ex6',
+    data: {
+      message: 'Vue works'
+    },
+    computed: {
+      // a computed getter
+      big: function () {
+        // `this` points to the vm instance
+        return this.message.toUpperCase();
+      }, 
+      // a computed getter
+      small: function () {
+        // `this` points to the vm instance
+        return this.message.toLowerCase();
+      }, 
+    }
+  });
+</script>
+</html>

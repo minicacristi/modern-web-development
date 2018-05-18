@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vue examples</title>
+  </head>
+  <body>
+    <article id='ex4'>
+      <h1>{{ model }}</h1>
+      <input v-model='model'> </input>
+      <button v-on:click='increase()'>
+        BIG
+      </button>
+      <button v-on:click='decrease()'>
+        small
+      </button>
+    </article>
+  </body>
+  <script src='https://cdn.jsdelivr.net/npm/vue'></script>
+  <script>
+    var ex4 = new Vue({
+      el: '#ex4',
+      data: {
+        model: 'Vue works'
+      },
+      methods: {
+        increase: function () {
+          this.model = this.model.toUpperCase();
+        },
+        decrease: function () {
+          this.model = this.model.toLowerCase();
+        }
+      }
+    });
+  </script>
+</html>
