@@ -5,5 +5,5 @@
   "quotmark": "single",
   "indent": 2,
   "maxerr": 50,
-  "maxlen": 80
+  "maxlen": 100
 }
