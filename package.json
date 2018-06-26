@@ -1,6 +1,6 @@
 {
   "name": "modern-web-development",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "examples for the weekend tutorials",
   "main": "",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "author": "Cristi Minica",
   "license": "WTFPL",
-  "repository": "https://github.com/Caphyon/modern-web-development.git",
+  "repository": "https://github.com/minicacristi/modern-web-development.git",
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.2",
