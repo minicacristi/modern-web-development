@@ -2,12 +2,12 @@
   "name": "modern-web-development",
   "version": "1.1.0",
   "description": "examples for the weekend tutorials",
-  "main": "",
   "scripts": {
-    "install-packages": "npm install && npm install --global jshint",
-    "lint": "jshint --exclude ./node_modules .",
+    "install-packages": "npm install && npm install --global jshint cordova",
+    "lint": "jshint --exclude ./node_modules,./Course6/app .",
     "start": "node ./Course1/mvc-service-structure-example/main.js",
-    "server": "node ./Course3/file-server/server.js"
+    "server": "node ./Course3/file-server/server.js",
+    "app": "node ./Course6/server/main.js | (cd ./Course6/app && cordova run browser)"
   },
   "author": "Cristi Minica",
   "license": "WTFPL",
