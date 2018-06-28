@@ -7,7 +7,8 @@
     "lint": "jshint --exclude ./node_modules,./Course6/app .",
     "start": "node ./Course1/mvc-service-structure-example/main.js",
     "server": "node ./Course3/file-server/server.js",
-    "app": "node ./Course6/server/main.js | (cd ./Course6/app && cordova run browser)"
+    "mobile": "node ./Course6/server/main.js | (cd ./Course6/app && cordova run browser)",
+    "desktop": "node ./Course6/server/main.js | electron ./Course7/"
   },
   "author": "Cristi Minica",
   "license": "WTFPL",
@@ -26,5 +27,8 @@
     "request": "^2.85.0",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1"
+  },
+  "devDependencies": {
+    "electron": "^2.0.3"
   }
 }
