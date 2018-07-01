@@ -7,7 +7,7 @@
     "lint": "jshint --exclude ./node_modules,./Course6/app .",
     "start": "node ./Course1/mvc-service-structure-example/main.js",
     "server": "node ./Course3/file-server/server.js",
-    "mobile": "node ./Course6/server/main.js | (cd ./Course6/app && cordova run browser)",
+    "mobile": "node ./Course6/server/main.js | (cd ./Course6/app && cordova run ios)",
     "desktop": "node ./Course6/server/main.js | electron ./Course7/"
   },
   "author": "Cristi Minica",
