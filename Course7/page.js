@@ -7,12 +7,8 @@ Vue.component('navigation', {
           src="https://installeranalytics.com/common/images/Installer_Analytics_Logo_No_Text.svg"/>
       </a>
       <div class="nav justify-content-end">
-        <a class="nav-item nav-link" href="#/authors">
-          Authors
-        </a>
-        <a class="nav-item nav-link" href="/">
-          Books
-        </a>
+        <router-link class="nav-item nav-link" to="/authors">Authors</router-link>
+        <router-link class="nav-item nav-link" to="/">Books</router-link>
       </div>
     </nav>
     `
