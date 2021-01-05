@@ -14,7 +14,7 @@
   "license": "WTFPL",
   "repository": "https://github.com/minicacristi/modern-web-development.git",
   "dependencies": {
-    "axios": "0.19.0",
+    "axios": "0.21.1",
     "body-parser": "^1.18.2",
     "bootstrap": "4.3.1",
     "express": "^4.16.3",
